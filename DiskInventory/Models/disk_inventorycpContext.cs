@@ -124,9 +124,8 @@ namespace DiskInventory.Models
                 entity.Property(e => e.GenreId).HasColumnName("genre_id");
 
                 entity.Property(e => e.ReleaseDate)
-                    .HasColumnName("release_date")
-                    .HasColumnType("date");
-
+                    .HasColumnType("date")
+                    .HasColumnName("release_date");
                 entity.Property(e => e.StatusId).HasColumnName("status_id");
 
                 entity.HasOne(d => d.DiskType)
